@@ -37,6 +37,7 @@ dependencies:
   html: ^0.15.4
   shared_preferences: ^2.5.3
   url_launcher: ^6.3.2
+  pub_semver: ^2.2.0
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
