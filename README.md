@@ -47,6 +47,7 @@ This project is built with a focus on maintainability and scalability, utilizing
     -   `http`: For making network requests to the SIM data service.
     -   `html`: For parsing the HTML response from the server.
     -   `shared_preferences`: To persist the selected theme (light/dark) across app launches.
+    -   `url_launcher`: For launching URLs.
 
 ---
 
