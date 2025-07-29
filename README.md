@@ -88,7 +88,7 @@ To get a local copy up and running, follow these simple steps.
 1.  **Fork** the repository.
 2.  **Clone** your forked repository:
     ```sh
-    git clone https://github.com/YOUR-USERNAME/paksimapp.git
+    git clone https://github.com/shoaibhassan2/paksimapp.git
     ```
 3.  Navigate to the project directory:
     ```sh
