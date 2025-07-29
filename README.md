@@ -12,12 +12,10 @@ A sleek and efficient Flutter application designed to fetch and display Pakistan
 
 The app features a clean user interface with both light and dark modes, which are saved across sessions.
 
-| Light Mode                                               | Dark Mode                                              |
-| -------------------------------------------------------- | ------------------------------------------------------ |
-| <img src="screenshots/lightmode.jpg" width="250">         | <img src="screenshots/darkmode.jpg" width="250">         |
-| *Main search screen in light mode.*                      | *Elegant dark mode for comfortable night use.*           |
-| <img src="screenshots/lightmoderesults.jpg" width="250"> | <img src="screenshots/darkmoderesults.jpg" width="250"> |
-| *Search results displayed in a clear dialog.*             | *Results dialog seamlessly integrated with the dark theme.* |
+| Light Mode                                                                                                      | Dark Mode                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| <div align="center"><img src="screenshots/lightmode.jpg" width="250"><br><em>Main search screen in light mode.</em></div> | <div align="center"><img src="screenshots/darkmode.jpg" width="250"><br><em>Elegant dark mode for comfortable night use.</em></div>         |
+| <div align="center"><img src="screenshots/lightmoderesults.jpg" width="250"><br><em>Search results displayed in a clear dialog.</em></div> | <div align="center"><img src="screenshots/darkmoderesults.jpg" width="250"><br><em>Results dialog seamlessly integrated with the dark theme.</em></div> |
 
 ---
 
@@ -134,4 +132,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
----
+---````
