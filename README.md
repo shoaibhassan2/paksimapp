@@ -10,14 +10,14 @@ A sleek and efficient Flutter application designed to fetch and display Pakistan
 
 ## 📸 Screenshots
 
-*(**Developer Note:** Replace these placeholder links with actual screenshots of your app. You can upload screenshots directly to your repository and link them here.)*
+The app features a clean user interface with both light and dark modes, which are saved across sessions.
 
-| Light Mode                                     | Dark Mode                                    |
-| ---------------------------------------------- | -------------------------------------------- |
-| <img src="" width="250"> | <img src="" width="250"> |
-| *Search Screen*                                | *Search Screen (Dark)*                       |
-| <img src="" width="250"> | <img src="" width="250"> |
-| *Results Dialog*                               | *Results Dialog (Dark)*                      |
+| Light Mode                                               | Dark Mode                                              |
+| -------------------------------------------------------- | ------------------------------------------------------ |
+| <img src="screenshots/lightmode.jpg" width="250">         | <img src="screenshots/darkmode.jpg" width="250">         |
+| *Main search screen in light mode.*                      | *Elegant dark mode for comfortable night use.*           |
+| <img src="screenshots/lightmoderesults.jpg" width="250"> | <img src="screenshots/darkmoderesults.jpg" width="250"> |
+| *Search results displayed in a clear dialog.*             | *Results dialog seamlessly integrated with the dark theme.* |
 
 ---
 
