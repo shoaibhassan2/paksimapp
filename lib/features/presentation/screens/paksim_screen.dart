@@ -1,3 +1,5 @@
+// lib/features/presentation/screens/paksim_screen.dart
+
 import 'package:flutter/material.dart';
 import 'package:paksimapp/core/theme/theme_controller.dart';
 import 'package:paksimapp/features/presentation/controllers/paksim_controller.dart';
@@ -48,19 +50,25 @@ class PakSimScreen extends StatelessWidget {
               ),
             ],
           ),
-          body: Column(
-            children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  child: PakSimFormWidget(
-                    onSearchPressed: (phoneNumber) => pakSimController.search(phoneNumber),
-                    isLoading: isLoading,
-                    errorMessage: errorMessage,
+          
+          // --- 👇 THE BODY IS NOW WRAPPED IN SAFEAREA 👇 ---
+          body: SafeArea(
+            // By default, SafeArea adds padding to all sides obscured by system UI
+            child: Column(
+              children: [
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: PakSimFormWidget(
+                      onSearchPressed: (phoneNumber) => pakSimController.search(phoneNumber),
+                      isLoading: isLoading,
+                      errorMessage: errorMessage,
+                    ),
                   ),
                 ),
-              ),
-              const FooterWidget(),
-            ],
+                // The FooterWidget is now guaranteed to be within the safe area
+                const FooterWidget(),
+              ],
+            ),
           ),
         );
       },

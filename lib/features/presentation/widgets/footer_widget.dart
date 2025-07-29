@@ -1,5 +1,7 @@
+// lib/features/presentation/widgets/footer_widget.dart
+
 import 'package:flutter/material.dart';
-import 'package:package_info_plus/package_info_plus.dart';
+import 'package:paksimapp/core/constants/app_constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FooterWidget extends StatelessWidget {
@@ -14,14 +16,15 @@ class FooterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the current theme data
     final theme = Theme.of(context);
 
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 20.0, top: 10.0),
+    return Container(
+      // No background color needed for the final version
+      padding: const EdgeInsets.symmetric(vertical: 10.0),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // Clickable creator credit
           InkWell(
             onTap: _launchURL,
             borderRadius: BorderRadius.circular(8),
@@ -39,21 +42,11 @@ class FooterWidget extends StatelessWidget {
           ),
           const SizedBox(height: 4),
 
-          // FutureBuilder to get and display the app version
-          FutureBuilder<PackageInfo>(
-            future: PackageInfo.fromPlatform(),
-            builder: (context, snapshot) {
-              String versionText = '...';
-              if (snapshot.hasData) {
-                versionText = 'Version ${snapshot.data!.version}';
-              }
-              return Text(
-                versionText,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.textTheme.bodySmall?.color?.withOpacity(0.6),
-                ),
-              );
-            },
+          Text(
+            'Version ${AppConstants.appVersion}',
+            style: theme.textTheme.bodySmall?.copyWith(
+              color: theme.textTheme.bodySmall?.color?.withOpacity(0.6),
+            ),
           ),
         ],
       ),
